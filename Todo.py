@@ -109,8 +109,8 @@ class ToDolist:
       elif (choice == '4'):
         break
       
-    else:
-      print("Invalid input. please try again")
+      else:
+        print("Invalid input. please try again")
 
   print("Goodbye")
 

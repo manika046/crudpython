@@ -530,33 +530,123 @@
 #     x= 300
 #     def myinnerfunc():
 #         print(x)
-#     myinnerfunc()
-    
+#     myinnerfunc()  
 # myfunc()
 
 # x = 300
-
 # def myfunc():
 #     x = 200
 #     print(x)
 # myfunc()
-
 # print(x)
 
 # import platform
-
 # x = platform.system()
 # print(x)
 
 # import datetime
-
 # x = datetime.datetime.now()
 # print(x.year)
 # print(x.strftime("%B"))
 
 # import datetime
-
 # x = datetime.datetime(2020, 5, 17)
-
 # print(x)
 
+# import json
+# x = '{"name":"manika", "age":20}'
+# y = json.loads(x)
+# print(y["age"])
+
+# import json
+# x = {
+#     "name": "manika",
+#     "age": 20,
+#     "city": "Bhaktapur"
+# }
+# y = json.dumps(x)
+# print(y)
+
+# x = min(5, 10, 25)
+# y = max(5, 10, 25)
+# print(x)
+# print(y)
+
+# x = abs(-7.35)
+# print(x)
+
+# x = pow(4, 3)
+# print(x)
+
+# import math
+# x = math.sqrt(64)
+# print(x)
+
+# import math
+# x = math.ceil(1.4)
+# y = math.floor(1.4)
+# print(x)
+# print(y)
+
+# import math
+# x = math.pi
+# print(x)
+
+# import draw
+
+# def play_game():
+#     print("draw")
+    
+# def main():
+#     result = play_game()
+#     draw.draw_game(result)
+    
+# if __name__ == '__main__':
+#     main()
+
+# import random
+
+# def lottery():
+#     for i in range(6):
+#         yield random.randint(1, 40)
+        
+#     yield random.randint(1, 15)
+    
+# for random_number in lottery():
+#     print("And the next number is .... %d!" %(random_number))
+
+# a = 1
+# b = 2
+# a, b = b, a
+# print(a, b)
+
+# def do_stuff_with_number(n):
+#     print(n)
+# def catch_this():
+#     the_list = (1, 2, 3, 4, 5)
+    
+#     for i in range(10):
+#         try:
+#             do_stuff_with_number(the_list[i])
+#         except IndexError:
+#             do_stuff_with_number(0)
+# catch_this()
+
+# import json
+# json_string = json.dumps([1, 2, 3, "a", "b", "c"])
+# print(json_string)
+
+# import json
+
+# def add_employee(salaries_json, name, salary):
+#     salaries = json.loads(salaries_json)
+#     salaries[name] = salary
+
+#     return json.dumps(salaries)
+
+# salaries = '{"Manika" : 5000, "Minie" : 1000 }'
+# new_salaries = add_employee(salaries, "Me", 800)
+# Salaries = json.loads(new_salaries)
+# print(Salaries["Manika"])
+# print(Salaries["Minie"])
+# print(Salaries["Me"])
